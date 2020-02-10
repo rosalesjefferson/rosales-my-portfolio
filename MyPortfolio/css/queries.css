@@ -1,0 +1,417 @@
+/* MEDIA QUERY MANAGER
+/* 
+BREAKPOINTS
+0 - 600px: phone
+600px - 900px: Tablet portrait
+900px - 1200px: Talet landscape
+1200px - 1800px + : Big desktop
+[1200 - 1800] is the normal normal styles apply
+*/
+
+/* i use em here because rem failed to work in some browsers. */
+
+/* 900px - 1200px: Talet landscape */
+@media only screen and (max-width: 75em){
+    html{
+        font-size: 56.25%;
+    }
+}
+@media only screen and (max-width: 65.62em){
+    .about__description{
+        width: 90%;
+    }
+}
+
+/* 600px - 900px: Tablet portrait */
+@media only screen and (max-width: 56.25em){
+    html{
+        font-size: 50%;
+    }
+    .home h1{
+        top: 38%;
+    }
+}
+
+/* 0 - 600px: phone */
+@media only screen and (max-width: 37.5em){
+    .nav{
+        -webkit-transition: top .5s, width 2s;
+        transition: top .5s, width 2s;
+    }
+    [class^="background-"]{
+        -webkit-transition: all 1s;
+        transition: all 1s;
+    }
+    .content.active{
+        -webkit-transition: left 1.3s;
+        transition: left 1.3s;
+    }
+    .home .navigation .background-one{
+        left: 0;
+    }
+    .home .navigation .background-two{
+        left: 5rem;
+        -webkit-transition-delay: .1s;
+                transition-delay: .1s;
+    }
+    .home .navigation .background-three{
+        left: 10rem;
+        -webkit-transition-delay: .2s;
+                transition-delay: .2s;
+    }
+    .home .navigation .background-four{
+        left: 15rem;
+        -webkit-transition-delay: .3s;
+                transition-delay: .3s;
+    }
+    .home .navigation .background-five{
+        left: 20rem;
+        -webkit-transition-delay: .4s;
+                transition-delay: .4s;
+    }
+    .home .navigation .background-six{
+        left: 25rem;
+        -webkit-transition-delay: .5s;
+                transition-delay: .5s;
+    }
+    .home .navigation .background-seven{
+        left: 30rem;
+        -webkit-transition-delay: .6s;
+                transition-delay: .6s;
+    }
+    .home .navigation .background-eight{
+        left: 35rem;
+        -webkit-transition-delay: .7s;
+                transition-delay: .7s;
+    }
+    .home .navigation .background-nine{
+        left: 40rem;
+        -webkit-transition-delay: .8s;
+                transition-delay: .8s;
+    }
+    .home .navigation .background-ten{
+        left: 45rem;
+        -webkit-transition-delay: .9s;
+                transition-delay: .9s;
+    }
+    .home .navigation .background-eleven{
+        left: 50rem;
+        -webkit-transition-delay: 1s;
+                transition-delay: 1s;
+    }
+    .home .navigation .background-twelve{
+        left: 55rem;
+        -webkit-transition-delay: 1.1s;
+                transition-delay: 1.1s;
+    }
+    .home .navigation .background-thirteen{
+        left: 60rem;
+        -webkit-transition-delay: 1.2s;
+                transition-delay: 1.2s;
+    }
+    .home .navigation .background-fourteen{
+        left: 65rem;
+        -webkit-transition-delay: 1.3s;
+                transition-delay: 1.3s;
+    }
+    .home .navigation .background-fifteen{
+        left: 70rem;
+        -webkit-transition-delay: 1.4s;
+                transition-delay: 1.4s;
+    }
+    .home .navigation .background-sixteen{
+        left: 75rem;
+        -webkit-transition-delay: 1.5s;
+                transition-delay: 1.5s;
+    }
+    .home .navigation .background-seventeen{
+        left: 80rem;
+        -webkit-transition-delay: 1.6s;
+                transition-delay: 1.6s;
+    }
+    .home .navigation .background-eighteen{
+        left: 85rem;
+        -webkit-transition-delay: 1.7s;
+                transition-delay: 1.7s;
+    }
+    .home .navigation .background-nineteen{
+        left: 90rem;
+        -webkit-transition-delay: 1.8s;
+                transition-delay: 1.8s;
+    }
+    .home .navigation .background-twenty{
+        left: 95rem;
+        -webkit-transition-delay: 1.9s;
+                transition-delay: 1.9s;
+    }
+    .home .navigation .background-twentyone{
+        left: 100rem;
+        -webkit-transition-delay: 2.0s;
+                transition-delay: 2.0s;
+    }
+    .home .navigation .background-twentytwo{
+        left: 105rem;
+        -webkit-transition-delay: 2.1s;
+                transition-delay: 2.1s;
+    }
+    .home .navigation .background-twentythree{
+        left: 110rem;
+        -webkit-transition-delay: 2.2s;
+                transition-delay: 2.2s;
+    }
+    .home .navigation .background-twentyfour{
+        left: 115rem;
+        -webkit-transition-delay: 2.3s;
+                transition-delay: 2.3s;
+    }
+    .home .navigation .background-twentyfive{
+        left: 120rem;
+        -webkit-transition-delay: 2.4s;
+                transition-delay: 2.4s;
+    }
+    .home .navigation .background-twentysix{
+        left: 125rem;
+        -webkit-transition-delay: 2.5s;
+                transition-delay: 2.5s;
+    }
+    .home .navigation .background-twentyseven{
+        left: 130rem;
+        -webkit-transition-delay: 2.6s;
+                transition-delay: 2.6s;
+    }
+    .home .navigation .background-twentyeight{
+        left: 135rem;
+        -webkit-transition-delay: 2.7s;
+                transition-delay: 2.7s;
+    }
+}
+@media only screen and (max-width: 33.12em){
+    #portfolio{
+      height: 60rem;
+    }
+    .portfolio__img-box{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+        -webkit-box-align: center;
+                align-items: center;
+    }
+    .nav .nav__lists .nav__item{
+        font-size: 1.6rem;
+    }
+    .home .navigation .button__box{
+        top: .5rem;
+        right: 1.5rem;
+    }
+}
+@media only screen and (max-width: 29.37em){
+    .home h1{
+        top: 41%;
+        left: 9%;
+    }
+    h1 .home__name{
+        font-size: 4rem;
+         line-height: 3.5rem;
+    }
+    .home h1 .home__button{
+        font-size: 1.6rem;
+        padding: .5rem 1rem;
+    }
+    
+}
+@media only screen and (max-width: 27.12em){
+    .nav .nav__lists .nav__item{
+        font-size: 1.2rem;
+    }
+}
+@media only screen and (max-width: 25.93em){
+    .home h1{
+        left: 8%;
+    }
+    .skills__description{
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 25em){
+    #skills .skill__box .firebase{
+        width: 23rem;
+    }
+
+}
+@media only screen and (max-width: 23.75em){
+    .nav .nav__lists >*:not(:last-child){
+        margin-right: 1.5rem;
+    }
+}
+@media only screen and (max-width: 23.12em){
+    .skills__description{
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 21.375em){
+    #skills .skill__box .firebase{
+        width: 20rem;
+    }
+}
+@media only screen and (max-width: 20em){
+    .skills__description.future{
+        margin: 5rem 0 3rem 0;
+    }
+}
+@media only screen and (max-width: 19.9375em){
+    #skills .skill__box figure{
+        width: 6rem;
+        height: 6rem;
+    }
+}
+
+@media only screen and (min-width: 87.5em) {
+    html{
+        font-size: 75%; 
+    }
+    .nav{
+        -webkit-transition: top .5s, width 1.5s;
+        transition: top .5s, width 1.5s;
+    }
+    [class^="background-"]{
+        width: 10rem;
+    }
+    .home .navigation .background-two{
+        left: 10rem;
+        -webkit-transition-delay: .05s;
+                transition-delay: .05s;
+    }
+    .home .navigation .background-three{
+        left: 20rem;
+        -webkit-transition-delay: .1s;
+                transition-delay: .1s;
+    }
+    .home .navigation .background-four{
+        left: 30rem;
+        -webkit-transition-delay: .15s;
+                transition-delay: .15s;
+    }
+    .home .navigation .background-five{
+        left: 40rem;
+        -webkit-transition-delay: .20s;
+                transition-delay: .20s;
+    }
+    .home .navigation .background-six{
+        left: 50rem;
+        -webkit-transition-delay: .25s;
+                transition-delay: .25s;
+    }
+    .home .navigation .background-seven{
+        left: 60rem;
+        -webkit-transition-delay: .30s;
+                transition-delay: .30s;
+    }
+    .home .navigation .background-eight{
+        left: 70rem;
+        -webkit-transition-delay: .35s;
+                transition-delay: .35s;
+    }
+    .home .navigation .background-nine{
+        left: 80rem;
+        -webkit-transition-delay: .40s;
+                transition-delay: .40s;
+    }
+    .home .navigation .background-ten{
+        left: 90rem;
+        -webkit-transition-delay: .45s;
+                transition-delay: .45s;
+    }
+    .home .navigation .background-eleven{
+        left: 100rem;
+        -webkit-transition-delay: .50s;
+                transition-delay: .50s;
+    }
+    .home .navigation .background-twelve{
+        left: 110rem;
+        -webkit-transition-delay: .55s;
+                transition-delay: .55s;
+    }
+    .home .navigation .background-thirteen{
+        left: 120rem;
+        -webkit-transition-delay: .60s;
+                transition-delay: .60s;
+    }
+    .home .navigation .background-fourteen{
+        left: 130rem;
+        -webkit-transition-delay: .65s;
+                transition-delay: .65s;
+    }
+    .home .navigation .background-fifteen{
+        left: 140rem;
+        -webkit-transition-delay: .70s;
+                transition-delay: .70s;
+    }
+    .home .navigation .background-sixteen{
+        left: 150rem;
+        -webkit-transition-delay: .75s;
+                transition-delay: .75s;
+    }
+    .home .navigation .background-seventeen{
+        left: 160rem;
+        -webkit-transition-delay: .80s;
+                transition-delay: .80s;
+    }
+    .home .navigation .background-eighteen{
+        left: 170rem;
+        -webkit-transition-delay: .85s;
+                transition-delay: .85s;
+    }
+    .home .navigation .background-nineteen{
+        left: 180rem;
+        -webkit-transition-delay: .90s;
+                transition-delay: .90s;
+    }
+    .home .navigation .background-twenty{
+        left: 190rem;
+        -webkit-transition-delay: .95s;
+                transition-delay: .95s;
+    }
+    .home .navigation .background-twentyone{
+        left: 200rem;
+        -webkit-transition-delay: 1s;
+                transition-delay: 1s;
+    }
+    .home .navigation .background-twentytwo{
+        left: 210rem;
+        -webkit-transition-delay: 1.05s;
+                transition-delay: 1.05s;
+    }
+    .home .navigation .background-twentythree{
+        left: 220rem;
+        -webkit-transition-delay: 1.10s;
+                transition-delay: 1.10s;
+    }
+    .home .navigation .background-twentyfour{
+        left: 230rem;
+        -webkit-transition-delay: 1.15s;
+                transition-delay: 1.15s;
+    }
+    .home .navigation .background-twentyfive{
+        left: 240rem;
+        -webkit-transition-delay: 1.20s;
+                transition-delay: 1.20s;
+    }
+    .home .navigation .background-twentysix{
+        left: 250rem;
+        -webkit-transition-delay: 1.25s;
+                transition-delay: 1.25s;
+    }
+    .home .navigation .background-twentyseven{
+        left: 260rem;
+        -webkit-transition-delay: 1.30s;
+                transition-delay: 1.30s;
+    }
+    .home .navigation .background-twentyeight{
+        left: 270rem;
+        -webkit-transition-delay: 1.35s;
+                transition-delay: 1.35s;
+    }
+    .content{
+        left: -200rem;
+    }
+}
